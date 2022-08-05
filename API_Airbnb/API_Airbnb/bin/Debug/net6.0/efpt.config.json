@@ -1,0 +1,99 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "AirbnbContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data\/Context",
+   "OutputPath": "Data\/Models",
+   "ProjectRootNamespace": "API_Airbnb",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[ar_bookings]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_categories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_Cities]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_countries]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_currencies]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_disputes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_promo_codes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_properties]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_property_images]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_property_reviews]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_property_type]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_room_type]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_states]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_subcategories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_transactions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ar_users]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "airbnb.AirBNB_API",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
