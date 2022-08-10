@@ -48,11 +48,11 @@ namespace API_Airbnb.Data.Models
         public int? CityId { get; set; }
         [Column("address")]
         public string Address { get; set; }
-        [Column("latitude")]
-        [StringLength(50)]
+        [Column("latitude", TypeName = "nvarchar(MAX)")]
+     
         public string Latitude { get; set; }
-        [Column("longitude")]
-        [StringLength(50)]
+       
+        [Column("longitude",TypeName = "nvarchar(MAX)")]
         public string Longitude { get; set; }
         [Column("bedroom_count")]
         public byte? BedroomCount { get; set; }

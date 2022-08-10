@@ -383,13 +383,11 @@ namespace API_Airbnb.Migrations
                         .HasColumnName("end_date");
 
                     b.Property<string>("Latitude")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("nvarchar(MAX)")
                         .HasColumnName("latitude");
 
                     b.Property<string>("Longitude")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("nvarchar(MAX)")
                         .HasColumnName("longitude");
 
                     b.Property<string>("MinimumStay")

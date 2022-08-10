@@ -75,7 +75,7 @@ namespace API_Airbnb.Controllers
             _propertyRepository.Add(property);
             _propertyRepository.SaveChanges();
             var propertyData = _propertyRepository.GetWithAllDataByID(property.Id);
-            return CreatedAtAction(actionName: nameof(GetWithAllData), routeValues: new { id = id }, _mapper.Map<PropertyChildDTO>(propertyData));
+            return CreatedAtAction(actionName: nameof(GetWithAllData), routeValues: new { id = property.Id }, _mapper.Map<PropertyChildDTO>(propertyData));
         }
         [Route("Update/{Id}")]
         [HttpPut]

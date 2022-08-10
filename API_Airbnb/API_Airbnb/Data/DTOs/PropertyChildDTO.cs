@@ -62,6 +62,7 @@
         public DateTime? Modified { get; set; }
 
         public bool? Status { get; set; }
+        public string Url { get; set; } = "";
 
 
         public virtual ICollection<PropertyImageChildDTO> ArPropertyImages { get; set; } = new HashSet<PropertyImageChildDTO>();

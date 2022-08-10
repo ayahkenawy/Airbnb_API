@@ -1,38 +1,63 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup Label="Globals">
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-  </PropertyGroup>
+	<PropertyGroup Label="Globals">
+		<SccProjectName>SAK</SccProjectName>
+		<SccProvider>SAK</SccProvider>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccLocalPath>SAK</SccLocalPath>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="microsoft.aspnetcore.authentication.jwtbearer" Version="6.0.7" />
-    <PackageReference Include="microsoft.aspnetcore.identity" Version="2.2.0" />
-    <PackageReference Include="microsoft.aspnetcore.identity.EntityFrameworkCore" Version="6.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="microsoft.identitymodel.tokens" Version="6.21.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="microsoft.aspnetcore.authentication.jwtbearer" Version="6.0.7" />
+		<PackageReference Include="microsoft.aspnetcore.identity" Version="2.2.0" />
+		<PackageReference Include="microsoft.aspnetcore.identity.EntityFrameworkCore" Version="6.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="microsoft.identitymodel.tokens" Version="6.21.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Assets\Images\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Properties\PublishProfiles\" />
+		<Folder Include="Properties\ServiceDependencies\" />
+		<Content Include="Assets\Images\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\Images\02c47042-a725-4582-b17c-7598bdcc5251.jpeg" />
+	  <None Remove="Assets\Images\095517c7-37dd-4172-ab05-7c4a2fd266fa.jpeg" />
+	  <None Remove="Assets\Images\1c5fbd87-85c3-4ca6-8629-f8a2bac13b50.jpg" />
+	  <None Remove="Assets\Images\2fb58c99-8caa-4e45-abff-6c85b9fbca02.jpg" />
+	  <None Remove="Assets\Images\3652b238-70c4-474c-9ff4-4fc5e39e2063.jpeg" />
+	  <None Remove="Assets\Images\3f5b61e3-af9a-499a-a164-a90c88382de1.jpeg" />
+	  <None Remove="Assets\Images\465ecf75-f5f2-4bb3-becf-343ca775195b.jpg" />
+	  <None Remove="Assets\Images\47b77aca-f7c8-41d0-b43d-26f2ac0a91a2.jpg" />
+	  <None Remove="Assets\Images\587b84d8-bdce-457b-9c0d-61a982eda1ac.jpg" />
+	  <None Remove="Assets\Images\6472196a-9148-4251-8ce3-331e95b7bced.jpg" />
+	  <None Remove="Assets\Images\68b21eba-073c-4ddb-834c-da927a1b0edc.jpg" />
+	  <None Remove="Assets\Images\a4550fcc-8aad-4f2a-a602-eabcca3cf3dd.jpg" />
+	  <None Remove="Assets\Images\b682c3d4-fb13-4dc9-a8ed-188cea9c6ff6.jpeg" />
+	  <None Remove="Assets\Images\b682c3d4-fb13-4dc9-a8ed-188cea9c6ff6_2.jpeg" />
+	  <None Remove="Assets\Images\e1136c93-bbff-4e7f-a9ba-9d66d2a7f3ee.jpeg" />
+	  <None Remove="Assets\Images\e8894c89-cd6a-4959-bcda-f72499d13311.jpg" />
+	  <None Remove="Assets\Images\f7881cb2-54ca-443a-9559-3483140853e3.jpeg" />
+	  <None Remove="Assets\Images\febd8c49-3af0-41cc-965f-577c77cd4de3.jpeg" />
+	</ItemGroup>
 
 </Project>

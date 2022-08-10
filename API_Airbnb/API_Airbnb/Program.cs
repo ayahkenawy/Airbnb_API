@@ -115,6 +115,7 @@ options.AddPolicy("adminAndhost", policy => policy.RequireClaim(ClaimTypes.Role,
 #region mapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 #endregion
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -136,6 +137,6 @@ app.UseCors(allowAll);
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-
+app.UseSwagger();
 
 app.Run();
